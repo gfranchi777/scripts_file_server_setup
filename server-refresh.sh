@@ -104,7 +104,7 @@ function createAuditLogs {
     echo "      <tr>"
 	printSectionMessage "Creating Audit File For $dir: "
     
-	tree ${dir} > ${logsBaseDir}/${currDate}-`basename ${dir}`-audit.log
+	tree ${dir} > ${logsBaseDir}/${currDate}-audit-`basename ${dir}`.log
     
 	cmdExitStatus
     chmod 600 ${logsBaseDir}/*
